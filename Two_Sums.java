@@ -7,7 +7,7 @@ public class Two_Sums {
 
 	
 	
-	    public static int[] twoSum(int[] nums, int target) {
+	    public static void twoSum(int[] nums, int target) {
 	        int[] result = new int[2];
 	        Map<Integer,Integer> store = new HashMap<Integer,Integer>();
 	        for(int i =0; i<nums.length; i++)
@@ -21,14 +21,14 @@ public class Two_Sums {
 	            }
 	            store.put(nums[i], i);
 	        }
-	        return result;
+	        	System.out.print("No Such Value");
 	    }
 	
 	    
 	    public static void main(String[] args)
 	    {
 	    	int num[] = {1,2,3,4};
-	    	int target = 7;
+	    	int target = 10;
 	    	twoSum(num, target);
 	    }
 	
